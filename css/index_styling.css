@@ -1,0 +1,115 @@
+/* importing google font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  /* color variables */
+  --bg-primary: #413c58; /* english violet */
+  --bg-secondary: #a3c4bc; /* ash gray */
+  --font-color-primary: #bfd7b5; /* tea green */
+  --font-color-secondary: #e7efc5; /* cream */
+  --backup-color: #f2dda4; /* vanilla */
+}
+
+/* styling is desktop first */
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+/* style for header/navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 70px;
+}
+
+/* style for children of header */
+.navbar h2 {
+  color: var(--font-color-primary);
+  font-weight: 800;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+/* removes the bullet style */
+.navbar ul li {
+  list-style: none;
+}
+
+/* style for the links to other pages */
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  font-size: 16px;
+  margin-right: 50px;
+  transition: color 0.3s ease;
+}
+
+/* event that triggers line 55 */
+.navbar ul li:hover a {
+  color: var(--font-color-primary);
+}
+
+/* removes the margin of the rightmost list item */
+.navbar ul li:last-child a {
+  margin-right: 40px;
+}
+
+/* styling the hero section */
+.greeting {
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+.fave-quote {
+  margin: 50px 50px 30px;
+  padding: 10px 20px;
+  width: 600px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: var(--font-color-primary);
+  border-radius: 12px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.elevator-pitch {
+display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.elevator-pitch p {
+  color: var(--font-color-primary);
+  font-size: 14px;
+}
+
+/* .elevator-pitch span {
+  color: var(--font-color-secondary);
+  text-decoration: underline;
+} */
+
+.elevator-pitch a{
+  text-decoration: none;
+}
