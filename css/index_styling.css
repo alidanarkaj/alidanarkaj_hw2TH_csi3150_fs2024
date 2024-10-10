@@ -49,7 +49,7 @@ body {
 /* style for the links to other pages */
 .navbar ul li a {
   text-decoration: none;
-  color: var(--font-color-secondary);
+  color: var(--backup-color);
   font-size: 16px;
   margin-right: 50px;
   transition: color 0.3s ease;
@@ -67,7 +67,7 @@ body {
 
 /* styling the hero section */
 .greeting {
-  height: 640px;
+  height: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,39 +77,57 @@ body {
 .greeting img {
   width: 200px;
   height: 200px;
-  margin-top: 50px;
   border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--bg-secondary);
 }
 
+/* robert frost quote */
 .fave-quote {
   margin: 50px 50px 30px;
   padding: 10px 20px;
-  width: 600px;
+  width: 500px;
   background: rgba(255, 255, 255, 0.08);
   display: inline-block;
   color: var(--font-color-primary);
   border-radius: 12px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 
+/* about me section */
 .elevator-pitch {
-display: flex;
+  margin: 0 150px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 50px;
+  justify-content: center;
 }
 
+/* about me text paragraph */
 .elevator-pitch p {
   color: var(--font-color-primary);
-  font-size: 14px;
+  font-size: 16px;
 }
 
-/* .elevator-pitch span {
-  color: var(--font-color-secondary);
-  text-decoration: underline;
-} */
-
-.elevator-pitch a{
+/* resume & about me link inside text paragraph */
+.elevator-pitch a {
   text-decoration: none;
+  color: var(--font-color-secondary);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+/* event that triggers line 117 */
+.elevator-pitch a:hover {
+  color: var(--backup-color);
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: var(--font-color-secondary);
 }
