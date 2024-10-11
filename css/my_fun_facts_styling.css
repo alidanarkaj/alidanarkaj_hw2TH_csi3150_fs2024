@@ -232,7 +232,7 @@ footer .useful-links ul li a {
   transition: color 0.3s ease;
 }
 
-/* event that triggers line 171 */
+/* event that triggers line 232 */
 footer .useful-links ul li a:hover {
   color: var(--backup-color);
 }
