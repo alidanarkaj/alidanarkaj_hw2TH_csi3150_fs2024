@@ -1,0 +1,240 @@
+/* importing google font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  /* color variables */
+  --bg-primary: #413c58; /* english violet */
+  --bg-secondary: #a3c4bc; /* ash gray */
+  --font-color-primary: #bfd7b5; /* tea green */
+  --font-color-secondary: #e7efc5; /* cream */
+  --backup-color: #f2dda4; /* vanilla */
+}
+
+/* styling is desktop first */
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+/* style for header/navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 70px;
+}
+
+/* style for children of header */
+.navbar h2 {
+  color: var(--font-color-primary);
+  font-weight: 800;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+/* removes the bullet style */
+.navbar ul li {
+  list-style: none;
+}
+
+/* style for the links to other pages */
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--backup-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 50px;
+  transition: color 0.3s ease;
+}
+
+/* event that triggers line 56 */
+.navbar ul li:hover a {
+  color: var(--font-color-primary);
+}
+
+/* removes the margin of the rightmost list item */
+.navbar ul li:last-child a {
+  margin-right: 40px;
+}
+
+/* my contact info */
+.navbar .my-info {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  color: var(--font-color-primary);
+}
+
+/* start of objective section */
+.objective {
+  margin: 0 130px 0;
+}
+.objective h4 {
+  margin: 100px 50px 30px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: var(--font-color-secondary);
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.objective p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  font-size: 18px;
+  color: var(--font-color-secondary);
+}
+
+/* start of professional experience section */
+.professional-experience {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 130px 0;
+}
+
+.professional-experience h4 {
+  margin: 50px 50px 30px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: var(--font-color-secondary);
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.professional-experience .sub-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 0 50px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--font-color-secondary);
+}
+
+.professional-experience p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  font-size: 18px;
+  text-align: justify;
+  color: var(--font-color-secondary);
+}
+
+/* start of educational experience/hobbies columns  */
+.two-column {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin: 0 50px 30px;
+  padding: 0 50px;
+}
+
+.two-column .educational-experiences h4 {
+  margin: 50px 80px 30px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: var(--font-color-secondary);
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.two-column .educational-experiences table {
+  margin: 0px 90px 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--font-color-secondary);
+  color: var(--font-color-primary);
+  font-size: 16px;
+  text-align: center;
+}
+
+.two-column .educational-experiences tr {
+  border-style: solid;
+  border-width: 2px;
+}
+
+.two-column .educational-experiences tr th {
+  font-weight: 600;
+  padding: 5px;
+}
+
+/* right column */
+.two-column .extracurricular h4 {
+  margin: 0px 50px 30px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: var(--font-color-secondary);
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.two-column .extracurricular p {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 70px;
+  width: 700px;
+  font-size: 18px;
+  text-align: justify;
+  color: var(--font-color-secondary);
+}
+
+/* begin footer styling */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-secondary);
+  padding: 20px 50px 40px;
+}
+
+/* copyright syling */
+footer .copyright {
+  color: var(--bg-primary);
+  font-size: 14px;
+}
+
+/* useful links styling */
+footer .useful-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer .useful-links ul li {
+  list-style: none;
+  line-height: 25px;
+}
+
+/* removing anchor rendor styling */
+footer .useful-links ul li a {
+  text-decoration: none;
+  color: var(--bg-primary);
+  /* transition of links */
+  transition: color 0.3s ease;
+}
+
+/* event that triggers line 171 */
+footer .useful-links ul li a:hover {
+  color: var(--backup-color);
+}
