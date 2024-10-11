@@ -66,6 +66,7 @@ body {
   margin-right: 40px;
 }
 
+/* favorite book section */
 .favorite-book h3 {
   margin: 50px 150px 30px;
   padding: 10px 20px;
@@ -81,7 +82,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 100px;
-  gap: 80px;
+  gap: 50px;
   padding: 0 50px;
 }
 
@@ -104,33 +105,95 @@ body {
 .favorite-book .book-cover a {
   text-decoration: none;
   color: var(--font-color-primary);
-  font-weight: 700;
   transition: color 0.3s ease;
 }
 
+/* trigger event for line 108 */
 .favorite-book .book-cover a:hover {
   color: var(--backup-color);
   cursor: pointer;
 }
 
-/* favorite song section */
-.favorite-song {
+/* media section of audio and video */
+.media {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 100px;
-  gap: 80px;
-  padding: 0 50px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 130px 50px;
 }
 
+/* favorite song section */
+.favorite-song {
+  margin: -40px 0px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+/* title of favorite song */
 .favorite-song h3 {
-  margin: 50px 150px 30px;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.08);
   display: inline-block;
   color: var(--font-color-secondary);
   border-radius: 12px;
   font-size: 20px;
+}
+
+.favorite-song p {
+  color: var(--font-color-secondary);
+  font-size: 16px;
+}
+
+.favorite-song p span {
+  font-weight: 700;
+}
+
+.favorite-song p a {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  transition: color 0.3s ease;
+}
+
+/* trigger event for line 158 */
+.favorite-song p a:hover {
+  color: var(--backup-color);
+  cursor: pointer;
+}
+
+/* favorite movie section */
+.favorite-tv {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.favorite-tv h3 {
+  margin: 100px 0px 0px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: var(--font-color-secondary);
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.favorite-tv p {
+  color: var(--font-color-secondary);
+  font-size: 16px;
+}
+
+/* border around YT video */
+.favorite-tv iframe {
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--bg-secondary);
 }
 
 /* begin footer styling */
@@ -142,7 +205,7 @@ footer {
   padding: 20px 50px 40px;
 }
 
-/* copyright syling */
+/* copyright styling */
 footer .copyright {
   color: var(--bg-primary);
   font-size: 14px;
